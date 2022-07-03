@@ -199,13 +199,8 @@ li {
   text-align: center;
   border: 1px solid #333333;
   width: 100%;
-  overflow-x: scroll;
   table-layout: fixed;
   font-weight: bold;
-  display: block;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 .price table th {
   text-align: center;
@@ -543,7 +538,7 @@ footer .copyright {
   padding: 28px 0;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1400px) {
   /*
   ハンバーガーメニュー
   メニューが閉じている時は、「left: -300px;」で画面左に隠し、
@@ -719,20 +714,17 @@ footer .copyright {
     z-index: 10;
     cursor: pointer;
   }
-}
-@media screen and (max-width: 1000px) {
+
   .mv {
     height: 800px;
   }
   .mv .mv_inner {
     flex-direction: column-reverse;
     text-align: center;
+    margin: 0 0;
   }
   .mv .mv_inner .mv_cont {
     margin-top: 50px;
-  }
-  .mv .mv_inner .mv_cont h2 {
-    word-break: break-all;
   }
   .mv .mv_inner .mv_cont .mv_icons {
     justify-content: center;
@@ -749,7 +741,8 @@ footer .copyright {
   .skill .box_cont:first-child {
     margin-top: 0;
   }
-
+}
+@media screen and (max-width: 1000px) {
   .frow .wrapper {
     flex-direction: column;
     align-items: center;
@@ -789,4 +782,4 @@ footer .copyright {
   .profile .wrapper table {
     margin-top: 50px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20220703201048.css.map */

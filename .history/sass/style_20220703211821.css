@@ -720,7 +720,7 @@ footer .copyright {
     cursor: pointer;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1０00px) {
   .mv {
     height: 800px;
   }
