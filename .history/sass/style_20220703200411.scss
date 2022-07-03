@@ -680,7 +680,7 @@ footer {
 }
 
 // タブレット
-@media screen and (max-width:1150px){
+@media screen and (max-width:1400px){
 
   /*
 ハンバーガーメニュー
@@ -700,7 +700,6 @@ footer {
 #nav {
   text-align: center;
   display: block;
-  position: fixed;
   top: 0;
   left: -300px;
   bottom: 0;
@@ -713,7 +712,6 @@ footer {
   z-index: 100;
   opacity: 0;
   padding: 0;
-  margin: 0;
 }
 nav .inner {
   padding: 25px;
@@ -844,6 +842,41 @@ nav .btn a {
   cursor: pointer;
 }
 
+.mv {
+  height: 800px;
+  .mv_inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    .mv_cont {
+      margin-top: 50px;
+     .mv_icons {
+      justify-content: center
+     }
+    }
+  }
+
+}
+
+
+.skill {
+  .box_contents {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box_cont {
+    margin-top: 60px;
+  }
+  .box_cont:first-child {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
 
 }
 
@@ -851,39 +884,6 @@ nav .btn a {
 
 // sp
 @media screen and (max-width:1000px){
-  .mv {
-    height: 800px;
-    .mv_inner {
-      flex-direction: column-reverse;
-      text-align: center;
-      .mv_cont {
-        margin-top: 50px;
-        h2 {
-          word-break: break-all;
-        }
-       .mv_icons {
-        justify-content: center
-       }
-      }
-    }
-  
-  }
-  
-  
-  .skill {
-    .box_contents {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .box_cont {
-      margin-top: 60px;
-    }
-    .box_cont:first-child {
-      margin-top: 0;
-    }
-  }
-  
 
   .frow {
 
