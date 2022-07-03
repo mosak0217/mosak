@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  color: #333;
+  font-size: 1.6rem;
+  font-family: "Helvetica", "Hiragino Kaku Gothic ProN";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.btn {
+  padding: 8px 40px;
+  background-color: #101A70;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header_nav p .header_nav_list {
+  display: flex;
+}/*# sourceMappingURL=style_20220701122839.css.map */

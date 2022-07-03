@@ -1,0 +1,212 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  color: rgba(51, 51, 51, 0.2);
+  font-size: 1.6rem;
+  font-family: "Helvetica", "Hiragino Kaku Gothic ProN";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: rgba(51, 51, 51, 0.2);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.btn {
+  padding: 8px 40px;
+  background-color: #101A70;
+  border-radius: 20px;
+  display: block;
+  transition: all 0.5s 0s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.btn a {
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  opacity: 0.7;
+  border: 1px solid #101A70;
+  font-weight: bold;
+}
+.btn:hover a {
+  color: #101A70;
+}
+
+.section_ttl {
+  color: rgba(34, 34, 34, 0.1333333333);
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  padding: 80px 0;
+}
+
+.section_sub_ttl {
+  color: #101A70;
+  font-size: 2rem;
+}
+
+.box_cont {
+  width: 360px;
+  height: 370px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+.box_cont .category_label {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  padding: 8px 37px;
+  background-color: #101A70;
+  border-radius: 20px 0 0 0;
+}
+.box_cont h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 14px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+.box_cont img {
+  border-radius: 20px 20px 0 0;
+}
+.box_cont p {
+  padding-left: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header_nav .header_nav_list {
+  display: flex;
+  align-items: center;
+}
+.header_nav .header_nav_item {
+  padding-left: 24px;
+}
+
+.mv {
+  width: 100vw;
+  height: 630px;
+  background-image: url(/img/background_color.jpg);
+  background-size: cover;
+}
+.mv .mv_inner {
+  display: flex;
+  align-items: center;
+  padding: 160px 0;
+}
+.mv .mv_inner .mv_cont h2 {
+  font-size: 3.2rem;
+  color: rgba(51, 51, 51, 0.2);
+  font-weight: bold;
+}
+
+.mv_icons {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 32px;
+}
+.mv_icons .mv_icon {
+  padding-right: 24px;
+  text-align: center;
+}
+
+.skill .box_contents {
+  display: flex;
+  justify-content: space-between;
+}
+.skill .box_contents .box_cont {
+  margin-left: 38px;
+}
+
+.portforio {
+  background-image: url(/img/background_color.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  margin-top: 64px;
+}
+.portforio .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.portforio .wrapper h2 {
+  font-size: 3.6rem;
+  padding-bottom: 32px;
+}
+.portforio .wrapper .portforio_sp {
+  text-align: center;
+}
+.portforio .wrapper .portforio_desc {
+  text-align: center;
+}
+.portforio .btn {
+  text-align: center;
+}
+
+.price table {
+  text-align: center;
+  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+}
+.price table tr {
+  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+  text-align: center;
+}
+.price table tr td {
+  padding: 14px;
+}
+
+.frow .wrapper {
+  display: flex;
+}
+
+.info .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.consept .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.consept_cont {
+  display: flex;
+  align-items: center;
+}
+.profile .wrapper {
+  display: flex;
+}/*# sourceMappingURL=style_20220701184941.css.map */

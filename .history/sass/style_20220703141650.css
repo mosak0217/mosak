@@ -1,0 +1,709 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: "Helvetica", "Hiragino Kaku Gothic ProN";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.btn {
+  padding: 8px 40px;
+  background-color: #101A70;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.5s 0s ease;
+  box-sizing: border-box;
+}
+.btn a {
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  opacity: 0.7;
+  border: 1px solid #101A70;
+  font-weight: bold;
+}
+.btn:hover a {
+  color: #101A70;
+}
+
+.section_ttl {
+  color: #222222;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  padding: 80px 0;
+}
+
+.section_sub_ttl {
+  color: #101A70;
+  font-size: 2rem;
+}
+
+.box_cont {
+  width: 360px;
+  height: 370px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+.box_cont .category_label {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  padding: 8px 37px;
+  background-color: #101A70;
+  border-radius: 20px 0 0 0;
+}
+.box_cont h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 14px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+.box_cont img {
+  border-radius: 20px 20px 0 0;
+}
+.box_cont p {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.marker {
+  font-size: 2.4rem;
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #FDFF98 20%);
+  display: inline-block;
+}
+.marker span {
+  color: #E51B1B;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header_nav .header_nav_list {
+  display: flex;
+  align-items: center;
+}
+.header_nav .header_nav_item {
+  padding-left: 24px;
+}
+.header_nav .btn {
+  margin-left: 24px;
+}
+
+.mv {
+  width: 100vw;
+  height: 630px;
+  background-image: url(/img/background_color.jpg);
+  background-size: cover;
+}
+.mv .mv_inner {
+  display: flex;
+  align-items: center;
+  padding: 160px 0;
+}
+.mv .mv_inner .mv_cont h2 {
+  font-size: 3.2rem;
+  color: #222222;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.mv_icons {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 32px;
+}
+.mv_icons .mv_icon {
+  padding-right: 24px;
+  text-align: center;
+}
+
+.skill .box_contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.portforio {
+  background-image: url(/img/background_color.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 920px;
+  margin-top: 64px;
+  text-align: center;
+}
+.portforio .wrapper {
+  text-align: center;
+}
+.portforio .wrapper h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  padding-bottom: 32px;
+  text-align: center;
+  color: #222222;
+}
+.portforio .btn {
+  padding: 16px 64px;
+  font-size: 20px;
+  border-radius: 260px;
+  margin-top: 90px;
+}
+
+.slick_area {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.price table {
+  text-align: center;
+  border: 1px solid #333333;
+  width: 100%;
+  table-layout: fixed;
+  font-weight: bold;
+}
+.price table th {
+  text-align: center;
+  padding: 14px;
+  color: white;
+}
+.price table tr {
+  border: 1px solid #333333;
+  text-align: center;
+  vertical-align: middle;
+}
+.price table tr td {
+  padding: 14px;
+  vertical-align: middle;
+}
+
+.tr_top {
+  background: #101A70;
+}
+
+.tr_color_red {
+  background: #A01313;
+  color: white;
+}
+
+.tr_color_gray {
+  background: #E9E9E9;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new p {
+  padding: 6px 24px;
+  background: #101A70;
+  color: white;
+  border-radius: 10px;
+  margin-right: 34px;
+}
+
+.frow {
+  text-align: center;
+}
+.frow .wrapper {
+  display: flex;
+}
+.frow .wrapper .box_cont {
+  width: 270px;
+  height: 350px;
+  text-align: center;
+  margin-top: 45px;
+}
+.frow .wrapper .box_cont h2 {
+  padding: 7px 26px;
+  background: #101A70;
+  color: white;
+  display: inline-block;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.frow .wrapper .box_cont img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 30px;
+}
+.frow .wrapper .box_cont h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.frow .wrapper .box_cont p {
+  text-align: left;
+  padding: none;
+}
+.frow .wrapper .arrow {
+  width: 15px;
+  height: 15px;
+  margin-top: 180px;
+}
+.frow .btn {
+  padding: 16px 64px;
+  border-radius: 120px;
+  margin-top: 40px;
+}
+
+.info .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.info .wrapper .info_cont {
+  width: 380px;
+  text-align: center;
+}
+.info .wrapper .info_cont img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.info .wrapper .info_cont p {
+  text-align: left;
+}
+.info .wrapper .info_cont .marker_color {
+  background: linear-gradient(transparent 60%, #FF7676 20%);
+}
+
+.consept .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.consept_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+.consept_cont .consept_txt_area {
+  max-width: 750px;
+  border-radius: 30px;
+  background: -webkit-linear-gradient(top, #E0EAFC, #CFDEF3);
+  text-align: left;
+  position: relative;
+}
+.consept_cont .consept_txt_area .number {
+  position: absolute;
+  font-weight: bold;
+  font-size: 5rem;
+  transform: translateY(-30%) translateX(1em);
+}
+.consept_cont .consept_txt_area .marker {
+  margin-bottom: 32px;
+  margin-left: 32px;
+  margin-top: 50px;
+}
+.consept_cont .consept_txt_area p {
+  padding: 0 32px;
+  padding-bottom: 50px;
+}
+
+.profile .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.profile .wrapper .profile_imgs {
+  padding-right: 40px;
+  text-align: center;
+}
+.profile .wrapper .profile_imgs .sns_imgs {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile table {
+  text-align: center;
+  border: 1px solid #222222;
+  width: 100%;
+  table-layout: fixed;
+  font-weight: bold;
+}
+.profile table th {
+  text-align: center;
+  padding: 14px;
+  color: white;
+}
+.profile table tr {
+  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+  text-align: center;
+  vertical-align: middle;
+}
+.profile table tr td {
+  padding: 14px;
+  vertical-align: middle;
+}
+.profile .tr_color_gray {
+  background: #E9E9E9;
+}
+
+.qa .accordion {
+  padding-bottom: 90px;
+}
+.qa .accordion dt {
+  display: flex;
+  background: #E9E9E9;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+.qa .accordion dd {
+  padding: 20px;
+  height: auto;
+  display: none;
+}
+
+.q_mark {
+  padding: 10px;
+  background: #101A70;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.a {
+  position: relative;
+}
+.a .a_mark {
+  position: absolute;
+  padding: 10px;
+  background: #FF7676;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.q_txt {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.a_txt {
+  width: 90%;
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.qa .q {
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.qa .q:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #222222;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(180deg);
+  transition: 0.2s;
+}
+.qa .q:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #222222;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+  transition: 0.2s;
+}
+.qa .q.active:after {
+  display: none;
+}
+.qa .a {
+  background-color: white;
+  display: none;
+}
+
+.contact {
+  background: #101A70;
+  color: white;
+}
+.contact .section_ttl {
+  color: white;
+  padding-bottom: 0;
+}
+.contact .section_sub_ttl {
+  color: white;
+}
+.contact h2 {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.contact .wrapper form label {
+  padding-left: 36px;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+.contact .wrapper form input {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+.contact .wrapper form textarea {
+  width: 100%;
+  height: 400px;
+  background: white;
+  border-radius: 20px;
+}
+.contact .wrapper form .radio {
+  display: inline-block;
+}
+.contact .wrapper button {
+  display: inline-block;
+  padding: 16px 300px;
+  background: #FF2727;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+.contact .wrapper .contact_btn {
+  text-align: center;
+}
+
+.name, .mail {
+  height: 50px;
+}
+
+.radio {
+  line-height: 2;
+}
+
+footer {
+  background: #101A70;
+}
+footer .copyright {
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1400px) {
+  /*
+  ハンバーガーメニュー
+  メニューが閉じている時は、「left: -300px;」で画面左に隠し、
+  「opacity: 0;」で非表示にしている
+  */
+  #header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  #nav {
+    text-align: center;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    width: 500px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.5s;
+    z-index: 100;
+    opacity: 0;
+    padding: 0;
+  }
+
+  nav .inner {
+    padding: 25px;
+  }
+
+  nav .inner ul {
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  nav .inner ul li {
+    width: 150px;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    padding: 0;
+  }
+
+  nav .inner ul .btn {
+    margin-top: 16px;
+  }
+
+  nav .inner ul li a {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    padding-bottom: 10px;
+  }
+
+  nav .inner ul li a:hover {
+    background: white;
+  }
+
+  /*
+  ハンバーガーメニュー
+  メニューが開いている時は、「left: 0;」「opacity: 1;」で
+  画面左に表示する
+  */
+  .open #nav {
+    left: 0;
+    opacity: 1;
+  }
+
+  .hamberger_btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  /*
+  ハンバーガーメニューの線の設定（メニューが閉じている時）
+  */
+  .hamberger_btn span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #222222;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+
+  /*
+  1本目の線の位置を設定
+  */
+  .hamberger_btn span:nth-child(1) {
+    top: 15px;
+  }
+
+  /*
+  2本目の線の位置を設定
+  */
+  .hamberger_btn span:nth-child(2) {
+    top: 23px;
+  }
+
+  /*
+  3本目の線の位置を設定
+  */
+  .hamberger_btn span:nth-child(3) {
+    top: 31px;
+  }
+
+  /*
+  ハンバーガーメニューの線の設定（メニューが開いている時）
+  線の色を白に変更
+  */
+  .open .hamberger_btn span {
+    background-color: white;
+  }
+
+  /*
+  1本目の線を-45度回転
+  */
+  .open .hamberger_btn span:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+  }
+
+  /*
+  2本目の線を45度回転
+  */
+  .open .hamberger_btn span:nth-child(2) {
+    transform: translateY(-4px) rotate(45deg);
+  }
+
+  .open .hamberger_btn span:nth-child(3) {
+    opacity: 0;
+    /*真ん中の線は透過*/
+  }
+
+  #mask {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  /*
+  メニューを開いている時は、全体を黒背景にする
+  */
+  .open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 10;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=style_20220703141650.css.map */
