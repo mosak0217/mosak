@@ -241,13 +241,8 @@ li {
     text-align: center;
     border: 1px solid #333333;
     width: 100%;
-    overflow-x: scroll;
     table-layout: fixed;
     font-weight: bold;
-    display: block;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 
 
   th {
@@ -886,6 +881,12 @@ nav .btn a {
     }
     .box_cont:first-child {
       margin-top: 0;
+    }
+  }
+
+  .price {
+    table {
+      p
     }
   }
   
