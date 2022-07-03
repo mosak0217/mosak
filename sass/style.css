@@ -195,7 +195,8 @@ li {
   padding: 20px 20px;
 }
 
-.price table {
+.price .wrapper {
+  width: 100%;
   text-align: center;
   border: 1px solid #333333;
   width: 100%;
@@ -203,17 +204,17 @@ li {
   table-layout: fixed;
   font-weight: bold;
 }
-.price table th {
+.price .wrapper th {
   text-align: center;
   padding: 14px;
   color: white;
 }
-.price table tr {
+.price .wrapper tr {
   border: 1px solid #333333;
   text-align: center;
   vertical-align: middle;
 }
-.price table tr td {
+.price .wrapper tr td {
   padding: 14px;
   vertical-align: middle;
 }
@@ -715,8 +716,7 @@ footer .copyright {
     z-index: 10;
     cursor: pointer;
   }
-}
-@media screen and (max-width: 1000px) {
+
   .mv {
     height: 800px;
   }
@@ -728,7 +728,7 @@ footer .copyright {
     margin-top: 50px;
   }
   .mv .mv_inner .mv_cont h2 {
-    word-break: break-all;
+    padding: 0 20px;
   }
   .mv .mv_inner .mv_cont .mv_icons {
     justify-content: center;
@@ -745,7 +745,8 @@ footer .copyright {
   .skill .box_cont:first-child {
     margin-top: 0;
   }
-
+}
+@media screen and (max-width: 1000px) {
   .frow .wrapper {
     flex-direction: column;
     align-items: center;
@@ -769,7 +770,7 @@ footer .copyright {
     flex-direction: column;
   }
   .consept .consept_cont .consept_txt_area {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .consept .consept_cont:nth-child(2) {
     flex-direction: column-reverse;
