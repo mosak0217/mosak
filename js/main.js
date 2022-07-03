@@ -27,7 +27,7 @@ const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
       });
     });
   }
-
+});
   
   
 
@@ -38,9 +38,33 @@ $('.slick_area').slick({
   autoplay: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: false,
+  arrows: true,
+  
+  
+      responsive: [
+        {
+          breakpoint: 1024, // 768〜1023px以下のサイズに適用
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 768, // 480〜767px以下のサイズに適用
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 480, // 〜479px以下のサイズに適用
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+  });
 
-});
+
 
 
 
@@ -85,6 +109,18 @@ $('.header_nav_item').on('click', function() {
 });
 
 
+$(document).ready(function ($){
+  // フェードイン
+  $(window).scroll(function () {
+      $('.fadeIn').each(function () {
+          var scroll = $(window).scrollTop(); // 現在のスクロール位置
+          var offset = $(this).offset().top; // 対象の上からの位置
+          var windowHeight = $(window).height(); // ウィンドウの高さ
+          if (scroll > offset - windowHeight + 150) {
+              $(this).addClass("scrollIn");
+          }
+      });
+  });
 });
 
 	
