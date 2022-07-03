@@ -202,10 +202,6 @@ li {
   overflow-x: scroll;
   table-layout: fixed;
   font-weight: bold;
-  display: block;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 .price table th {
   text-align: center;
