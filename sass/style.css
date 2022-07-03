@@ -58,6 +58,11 @@ li {
   color: #101A70;
 }
 
+.portforio_ttl {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+
 .section_ttl {
   color: #222222;
   font-size: 2.4rem;
@@ -538,6 +543,10 @@ footer .copyright {
   color: white;
   font-size: 1.4rem;
   padding: 28px 0;
+}
+
+.category .mv {
+  height: 380px;
 }
 
 @media screen and (max-width: 1150px) {

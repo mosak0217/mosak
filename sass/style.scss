@@ -63,6 +63,12 @@ li {
    }
 }
 
+.portforio_ttl {
+  font-weight: bold;
+  font-size: 3.6rem;
+
+}
+
 .section_ttl {
   color: #222222;
   font-size: 2.4rem;
@@ -680,6 +686,15 @@ footer {
     padding: 28px 0;
   }
 }
+
+.category {
+  .mv {
+    height: 380px;
+  }
+}
+
+
+
 
 // タブレット
 @media screen and (max-width:1150px){
