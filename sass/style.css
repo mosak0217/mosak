@@ -236,46 +236,57 @@ li {
 .price .wrapper {
   width: 100%;
   text-align: center;
-  border: 1px solid #333333;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
   width: 100%;
   overflow-x: scroll;
   table-layout: fixed;
   font-weight: bold;
+  border-radius: 20px;
 }
 .price .wrapper th {
   text-align: center;
   padding: 14px;
   color: white;
+  border-right: 2px solid #D9D9D9;
+}
+.price .wrapper th:nth-child(1) {
+  border-radius: 20px 0 0 0;
+}
+.price .wrapper th:nth-child(2) {
+  border-radius: 0 20px 0 0;
+  border-right: none;
+}
+.price .wrapper td:nth-child(even) {
+  font-weight: normal;
 }
 .price .wrapper tr {
-  border: 1px solid #333333;
   text-align: center;
   vertical-align: middle;
 }
 .price .wrapper tr td {
   padding: 14px;
   vertical-align: middle;
+  border-right: 2px solid #D9D9D9;
 }
-
-.tr_top {
+.price .wrapper tr td:nth-child(even) {
+  border-right: none;
+}
+.price .wrapper .tr_top {
   background: #101A70;
 }
-
-.tr_color_red {
+.price .wrapper .tr_color_red {
   background: #A01313;
   color: white;
 }
-
-.tr_color_gray {
+.price .wrapper .tr_color_gray {
   background: #E9E9E9;
 }
-
-.new {
+.price .wrapper .new {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.new p {
+.price .wrapper .new p {
   padding: 6px 24px;
   background: #101A70;
   color: white;
@@ -381,6 +392,9 @@ li {
   align-items: center;
   margin: 80px 0;
 }
+.consept_cont .consept_cont:first-child {
+  margin-top: 0;
+}
 .consept_cont .consept_txt_area {
   max-width: 100%;
   border-radius: 30px;
@@ -422,24 +436,31 @@ li {
 .profile table {
   table-layout: fixed;
   text-align: center;
-  border: 1px solid #222222;
   width: 100%;
   table-layout: fixed;
   font-weight: bold;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 .profile table th {
   text-align: center;
   padding: 14px;
   color: white;
+  border-radius: 20px;
 }
-.profile table tr {
-  border: 1px solid rgba(34, 34, 34, 0.1333333333);
+.profile tr {
   text-align: center;
   vertical-align: middle;
+  border-radius: 20px;
 }
-.profile table tr td {
+.profile tr td {
   padding: 14px;
+  border-right: 2px solid #D9D9D9;
   word-wrap: break-word;
+}
+.profile tr td:nth-child(even) {
+  font-weight: normal;
+  border-right: none;
 }
 .profile .tr_color_gray {
   background: #E9E9E9;
@@ -485,6 +506,7 @@ li {
 .q_txt {
   margin-left: 20px;
   padding-top: 10px;
+  width: 50%;
 }
 
 .a_txt {
