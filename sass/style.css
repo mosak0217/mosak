@@ -52,7 +52,7 @@ li {
   background-color: white;
   border: 1px solid #101A70;
   transform: translateY(-5px);
-  color: #101A70;
+  color: #222222;
   font-weight: bold;
 }
 
@@ -619,35 +619,48 @@ li {
 
 .my-parts {
   text-align: left;
+  width: 50%;
 }
 
-.my-parts label {
+.my-parts input[type=radio] {
+  display: none;
+  opacity: 0;
+}
+
+.my-parts input[type=radio] + span {
   display: inline-block;
+  position: relative;
+  padding: 0 0 0 1.2em;
+  margin: 0 0.2em 0;
+  cursor: pointer;
 }
 
-.my-parts select {
-  width: 100%;
-  height: 100px;
-  padding: 0;
-  border-radius: 0;
-  background-image: none;
+.my-parts input[type=radio] + span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: inherit;
-  color: inherit;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  display: block;
 }
 
-.my-parts select:focus {
-  outline: none;
-  border: 1px solid white;
-  box-shadow: none;
-  background: white;
-}
-
-.my-parts select option {
-  padding: 0.4em 0.8em;
+.my-parts input[type=radio]:checked + span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #FF2727;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  border: 0.2em solid #fff;
+  display: block;
 }
 
 footer {
