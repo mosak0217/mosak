@@ -18,7 +18,6 @@ img {
 }
 
 a {
-  color: #333333;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -46,19 +45,15 @@ li {
   transition: all 0.5s 0s ease;
   box-sizing: border-box;
   text-align: center;
-}
-.btn a {
   color: white;
 }
 
 .btn:hover {
   background-color: white;
-  opacity: 0.7;
   border: 1px solid #101A70;
+  transform: translateY(-5px);
+  color: #222222;
   font-weight: bold;
-}
-.btn:hover a {
-  color: #101A70;
 }
 
 .section_ttl {
@@ -82,7 +77,7 @@ li {
   position: relative;
 }
 .box_cont .category_label {
-  z-index: 10;
+  z-index: auto;
   font-weight: bold;
   color: white;
   padding: 8px 37px;
@@ -666,6 +661,7 @@ footer .copyright {
 }
 
 #category .wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
@@ -673,10 +669,12 @@ footer .copyright {
 }
 #category .wrapper .box_cont {
   width: 100%;
+  z-index: auto;
 }
 #category .wrapper .box_cont .category_label {
   font-size: 1.4rem;
   padding: 2px 15px;
+  z-index: auto;
 }
 #category .wrapper .box_cont h2 {
   font-size: 1.6rem;
@@ -699,6 +697,9 @@ footer .copyright {
   #category .wrapper .box_cont img {
     width: 100%;
   }
+  #category .wrapper .box_cont .category_label {
+    z-index: auto;
+  }
 }
 @media screen and (max-width: 700px) {
   #category .wrapper {
@@ -706,6 +707,9 @@ footer .copyright {
   }
   #category .wrapper .box_cont img {
     width: 100%;
+  }
+  #category .wrapper .box_cont .category_label {
+    z-index: auto;
   }
 }
 .pager .pagination {
@@ -772,11 +776,11 @@ footer .copyright {
   }
 
   .pager .pagination li.pre span::after {
-    content: "　前の10件へ";
+    content: "　前の5件へ";
   }
 
   .pager .pagination li.next span::before {
-    content: "次の10件へ　";
+    content: "次の5件へ　";
   }
 }
 #single .wrapper .single_img {
@@ -817,7 +821,7 @@ footer .copyright {
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 100;
   }
 
   #nav {
@@ -833,7 +837,7 @@ footer .copyright {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transition: all 0.5s;
-    z-index: 100;
+    z-index: 110;
     opacity: 0;
     padding: 0;
     margin: 0;
@@ -897,7 +901,7 @@ footer .copyright {
     position: relative;
     transition: all 0.5s;
     cursor: pointer;
-    z-index: 20;
+    z-index: 100;
   }
 
   /*
@@ -964,6 +968,7 @@ footer .copyright {
   #mask {
     display: none;
     transition: all 0.5s;
+    z-index: 100;
   }
 
   /*
@@ -978,7 +983,7 @@ footer .copyright {
     height: 100%;
     background: #000;
     opacity: 0.8;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
   }
 
