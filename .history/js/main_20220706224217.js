@@ -9,7 +9,7 @@ $('.slick_area').slick({
   slidesToShow: 1,
   // variableWidth: true,
   // adaptiveHeight: true,
-  // centerMode: true,
+  centerMode: true,
   arrows: true,
   prevArrow: '<img src="../img/arrow_left.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="../img/arrow_right.png" class="slide-arrow next-arrow">',

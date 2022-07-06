@@ -7,7 +7,7 @@ $('.slick_area').slick({
   fade: true,
   speed: 400,
   slidesToShow: 1,
-  // variableWidth: true,
+  variableWidth: true,
   // adaptiveHeight: true,
   // centerMode: true,
   arrows: true,
