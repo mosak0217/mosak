@@ -160,27 +160,6 @@ li {
   transform: translate(0, 0);
 }
 
-// スライダーボタン
-.slide-arrow {
-  bottom: 0;
-  cursor: pointer;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-.prev-arrow {
-  top: 250px;
-  left: -40px;
-}
-.next-arrow {
-  top: 250px;
-  right: -40px;
-}
-
-
-
-
 // header
 
 .header {
@@ -1146,7 +1125,7 @@ footer {
   top: 0;
   left: -300px;
   bottom: 0;
-  width: 300px;
+  width: 280px;
   background: #ffffff;
   overflow-x: hidden;
   overflow-y: auto;

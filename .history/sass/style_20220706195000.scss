@@ -161,23 +161,37 @@ li {
 }
 
 // スライダーボタン
+
 .slide-arrow {
+  background-color: #222222;
   bottom: 0;
-  cursor: pointer;
+  height: 0;
   margin: auto;
   position: absolute;
   top: 0;
-  width: 30px;
+  width: 0;
 }
 .prev-arrow {
-  top: 250px;
-  left: -40px;
+  border-bottom: 10px solid #222222;
+  border-left: 0;
+  border-right: 10px solid #222222;
+  border-top: 10px solid #222222;
+  left: -25px;
 }
 .next-arrow {
-  top: 250px;
-  right: -40px;
+  border-bottom: 10px solid #222222;
+  border-left: 10px solid #fff;
+  border-right: 0;
+  border-top: 10px solid #333;
+  right: -25px;
 }
-
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+}
 
 
 
