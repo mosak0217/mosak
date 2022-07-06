@@ -622,12 +622,17 @@ li {
   border-radius: 20px;
   margin-bottom: 20px;
   display: block;
+  color: #222222;
+  padding-left: 36px;
 }
 .contact .wrapper form textarea {
   width: 100%;
   height: 400px;
   background: white;
   border-radius: 20px;
+  color: #222222;
+  padding-left: 36px;
+  padding-top: 20px;
 }
 .contact .wrapper button {
   display: inline-block;
