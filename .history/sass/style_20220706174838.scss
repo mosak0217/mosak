@@ -1308,14 +1308,7 @@ nav .btn a {
 
 #single {
   dl {
-    dt {
-      font-size: 1.4rem;
-
-    }
-    dd {
-      font-size: 1.4rem;
-
-    }
+    
   }
 }
 
@@ -1442,49 +1435,8 @@ nav .btn a {
     }
   }
 
-}
 
-@media screen and (max-width: 568px) {
 
-  #single {
-    dl {
-      display: flex;
-      flex-direction: column;
-      dt {
-        font-size: 1.4rem;
   
-      }
-      dd {
-        font-size: 1.4rem;
-  
-      }
-    }
 
-}
-
-.price {
-
-  .wrapper {
-    table {
-      tr {
-
-     
-      td {
-        font-size: 1.2rem;
-    }
-    .new {
-      p {
-       display: none;
-      }
-    }
-
-  }
-  
-}
-
-}
-
-
-
-}
 }

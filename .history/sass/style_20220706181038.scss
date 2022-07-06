@@ -1319,6 +1319,19 @@ nav .btn a {
   }
 }
 
+.price {
+
+  .wrapper {
+    table {
+      td {
+        font-size: 1.2rem;
+
+      }
+      
+    }
+  }
+
+}
 
 
 
@@ -1459,32 +1472,6 @@ nav .btn a {
   
       }
     }
-
-}
-
-.price {
-
-  .wrapper {
-    table {
-      tr {
-
-     
-      td {
-        font-size: 1.2rem;
-    }
-    .new {
-      p {
-       display: none;
-      }
-    }
-
-  }
-  
-}
-
-}
-
-
 
 }
 }

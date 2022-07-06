@@ -235,6 +235,11 @@ li {
   margin: 0 auto;
   padding: 20px 20px;
 }
+.slick_area .slider_img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .price table {
   width: 100%;
@@ -800,6 +805,9 @@ footer .copyright {
     content: "次の5件へ　";
   }
 }
+#single .wrapper {
+  text-align: left;
+}
 #single .wrapper .single_img {
   display: flex;
   justify-content: center;
@@ -808,22 +816,17 @@ footer .copyright {
 #single .wrapper dl {
   padding-top: 90px;
   padding-bottom: 90px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 #single .wrapper dl dt {
-  width: 30%;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  text-align: left;
+  float: left;
+  width: 30%;
 }
 #single .wrapper dl dd {
-  width: 70%;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  text-align: left;
 }
 
 @media screen and (max-width: 1150px) {
@@ -1035,6 +1038,13 @@ footer .copyright {
     height: 400px;
     max-width: 100%;
   }
+
+  #single dl dt {
+    font-size: 1.4rem;
+  }
+  #single dl dd {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 1300px) {
   .frow .marker {
@@ -1115,5 +1125,24 @@ footer .copyright {
   }
   .qa .a_txt {
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  #single dl {
+    display: flex;
+    flex-direction: column;
+  }
+  #single dl dt {
+    font-size: 1.4rem;
+  }
+  #single dl dd {
+    font-size: 1.4rem;
+  }
+
+  .price .wrapper table tr td {
+    font-size: 1.2rem;
+  }
+  .price .wrapper table tr .new p {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

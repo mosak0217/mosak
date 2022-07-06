@@ -34,7 +34,6 @@ li {
   list-style: none;
 }
 
-
 .wrapper {
   width: 100%;
   max-width: 1160px;
@@ -1054,7 +1053,6 @@ footer {
   
   
   .wrapper {
-    text-align: left;
     
     
 
@@ -1075,16 +1073,16 @@ footer {
         
   padding-bottom: 20px;
   margin-bottom: 10px;
-  float: left;
-  width: 30%;
   
+  
+        
+
       }
       dd {
     
   padding-bottom: 20px;
   margin-bottom: 10px;
-  
-  
+  text-align: left;
         
 
       }
@@ -1306,23 +1304,6 @@ nav .btn a {
   }
 }
 
-#single {
-  dl {
-    dt {
-      font-size: 1.4rem;
-
-    }
-    dd {
-      font-size: 1.4rem;
-
-    }
-  }
-}
-
-
-
-
-
 }
 
 
@@ -1442,49 +1423,8 @@ nav .btn a {
     }
   }
 
-}
 
-@media screen and (max-width: 568px) {
 
-  #single {
-    dl {
-      display: flex;
-      flex-direction: column;
-      dt {
-        font-size: 1.4rem;
   
-      }
-      dd {
-        font-size: 1.4rem;
-  
-      }
-    }
 
-}
-
-.price {
-
-  .wrapper {
-    table {
-      tr {
-
-     
-      td {
-        font-size: 1.2rem;
-    }
-    .new {
-      p {
-       display: none;
-      }
-    }
-
-  }
-  
-}
-
-}
-
-
-
-}
 }
