@@ -155,12 +155,12 @@ li {
 
 .prev-arrow {
   top: 250px;
-  left: -40px;
+  left: -20px;
 }
 
 .next-arrow {
   top: 250px;
-  right: -40px;
+  right: -20px;
 }
 
 .header {
@@ -215,11 +215,8 @@ li {
 
 .skill .box_contents {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 36px;
-}
-.skill .box_contents .box_cont {
-  max-width: 100%;
 }
 
 .portforio {
@@ -262,60 +259,63 @@ li {
      object-fit: cover;
 }
 
+.price .table_scroll {
+  overflow-x: scroll;
+}
 .price table {
   width: 100%;
   text-align: center;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
-  overflow-x: scroll;
   table-layout: fixed;
   font-weight: bold;
   border-radius: 20px;
   padding: 0 42px;
+  min-width: 600px;
 }
-.price table th {
+.price th {
   text-align: center;
   padding: 14px;
   color: white;
   border-right: 2px solid #D9D9D9;
 }
-.price table th:nth-child(1) {
+.price th:nth-child(1) {
   border-radius: 20px 0 0 0;
 }
-.price table th:nth-child(2) {
+.price th:nth-child(2) {
   border-radius: 0 20px 0 0;
   border-right: none;
 }
-.price table td:nth-child(even) {
+.price td:nth-child(even) {
   font-weight: normal;
 }
-.price table tr {
+.price tr {
   text-align: center;
   vertical-align: middle;
 }
-.price table tr td {
+.price tr td {
   padding: 14px;
   vertical-align: middle;
   border-right: 2px solid #D9D9D9;
 }
-.price table tr td:nth-child(even) {
+.price tr td:nth-child(even) {
   border-right: none;
 }
-.price table .tr_top {
+.price .tr_top {
   background: #101A70;
 }
-.price table .tr_color_red {
+.price .tr_color_red {
   background: #A01313;
   color: white;
 }
-.price table .tr_color_gray {
+.price .tr_color_gray {
   background: #E9E9E9;
 }
-.price table .new {
+.price .new {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.price table .new p {
+.price .new p {
   padding: 6px 24px;
   background: #101A70;
   color: white;
@@ -470,35 +470,32 @@ li {
   justify-content: space-around;
 }
 
-.profile table {
+#profile .profile_scroll {
+  overflow-x: scroll;
+}
+#profile table {
   table-layout: fixed;
   text-align: center;
   width: 100%;
   font-weight: bold;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  min-width: 800px;
 }
-.profile table th {
-  text-align: center;
-  padding: 14px;
-  color: white;
-  border-radius: 20px;
-}
-.profile tr {
+#profile table tr {
   text-align: center;
   vertical-align: middle;
   border-radius: 20px;
 }
-.profile tr td {
+#profile table tr td {
   padding: 14px;
   border-right: 2px solid #D9D9D9;
-  word-wrap: break-word;
 }
-.profile tr td:nth-child(even) {
+#profile table tr td:nth-child(even) {
   font-weight: normal;
   border-right: none;
 }
-.profile .tr_color_gray {
+#profile table .tr_color_gray {
   background: #E9E9E9;
 }
 
@@ -522,9 +519,10 @@ li {
   padding: 10px;
   background: #101A70;
   color: white;
-  border-radius: 50%;
+  border-radius: 240%;
   text-align: center;
   align-self: flex-start;
+  width: 44px;
 }
 
 .a {
@@ -738,7 +736,7 @@ footer .copyright {
   padding-bottom: 14px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   #category .wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -758,6 +756,16 @@ footer .copyright {
   }
   #category .wrapper .box_cont .category_label {
     z-index: auto;
+  }
+
+  .prev-arrow {
+    top: 200px;
+    left: -20px;
+  }
+
+  .next-arrow {
+    top: 200px;
+    right: -20px;
   }
 }
 .pager .pagination {
@@ -799,7 +807,7 @@ footer .copyright {
 
 .pager .pagination li a:hover,
 .pager .pagination li a.active {
-  color: #000;
+  color: #222222;
   background: #FFF;
   border-radius: 10px;
 }
@@ -855,7 +863,14 @@ footer .copyright {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
   /*
   ハンバーガーメニュー
   メニューが閉じている時は、「left: -300px;」で画面左に隠し、
@@ -1056,13 +1071,12 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
   }
-  .skill .box_cont {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    width: 380px;
-    height: 400px;
-    max-width: 100%;
+  .skill .box_contents .box_cont {
+    width: 100%;
+    max-width: 760px;
+  }
+  .skill .box_contents .box_cont img {
+    width: 100%;
   }
 
   #single dl dt {
@@ -1072,18 +1086,18 @@ footer .copyright {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1024px) {
   .frow .marker {
-    font-size: 3vw;
+    font-size: 2.4rem;
   }
   .frow .frow_contents {
     flex-direction: column;
     align-items: center;
   }
   .frow .frow_contents .box_cont {
-    width: 360px;
+    width: 100%;
     height: 370px;
-    max-width: 100%;
+    max-width: 760px;
   }
   .frow .frow_contents .box_cont p {
     padding-top: 20px;
@@ -1108,7 +1122,6 @@ footer .copyright {
   }
   .info .wrapper .info_cont {
     margin-top: 60px;
-    padding: 0 20px;
   }
   .info .wrapper .info_cont:first-child {
     margin-top: 0;
@@ -1125,7 +1138,7 @@ footer .copyright {
     flex-direction: column;
   }
   .consept .consept_cont .marker {
-    font-size: 4.3vw;
+    font-size: 2.4rem;
   }
   .consept .consept_cont .consept_txt_area {
     margin-top: 40px;
@@ -1144,6 +1157,9 @@ footer .copyright {
   .profile .wrapper table {
     margin-top: 50px;
   }
+  .profile .wrapper table td {
+    font-size: 1.2rem;
+  }
 
   .qa .a .a_mark {
     position: absolute;
@@ -1154,6 +1170,16 @@ footer .copyright {
   }
 }
 @media screen and (max-width: 568px) {
+  .prev-arrow {
+    top: 100px;
+    left: -30px;
+  }
+
+  .next-arrow {
+    top: 100px;
+    right: -30px;
+  }
+
   #single dl {
     display: flex;
     flex-direction: column;
@@ -1163,12 +1189,5 @@ footer .copyright {
   }
   #single dl dd {
     font-size: 1.4rem;
-  }
-
-  .price .wrapper table tr td {
-    font-size: 1.2rem;
-  }
-  .price .wrapper table tr .new p {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
