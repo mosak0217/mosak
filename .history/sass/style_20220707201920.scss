@@ -30,7 +30,7 @@ a {
 
 a:hover {
   color: inherit;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 li {
@@ -1077,7 +1077,7 @@ footer {
 .pager .pagination li a:hover,
 .pager .pagination li a.active{
   color: #222222;
-  background-color: #FFF;
+  background-color: #;
   border-radius: 10px;
 }
 
@@ -1404,8 +1404,7 @@ nav .btn a {
   .frow {
 
     .marker {
-      padding: 0 10px;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
     .frow_contents {
       flex-direction: column;
@@ -1509,13 +1508,7 @@ nav .btn a {
 
 }
 
-@media screen and (max-width: 592px) {
-
-  .frow {
-    .marker {
-      font-size: 1.2rem;
-    }
-  }
+@media screen and (max-width: 568px) {
 
   .prev-arrow {
     top: 100px;
@@ -1542,13 +1535,6 @@ nav .btn a {
       }
     }
 
-}
-
-#consept {
-
-  .marker {
-    font-size: 1.5rem;
-  }
 }
 
 

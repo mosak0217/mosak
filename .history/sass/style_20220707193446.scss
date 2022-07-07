@@ -24,13 +24,11 @@ img {
 
 a {
   text-decoration: none;
-//  transition: all 0.5s ease;
+ transition: all 0.5s ease;
  }
 
-
 a:hover {
-  color: inherit;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 li {
@@ -693,11 +691,9 @@ justify-content: space-between;
   padding: 10px;
   background: #FF7676;
   color: #FFFF;
-  border-radius: 240%;
+  border-radius: 50%;
   display: inline-block;
-  vertical-align: top;
-  width: 44px;
-  text-align: center;
+  align-items: center;
 
 
 
@@ -705,14 +701,13 @@ justify-content: space-between;
 }
 
 .q_txt {
-  padding-left: 20px;
+  margin-left: 20px;
   padding-top: 10px;
   width: 60%;
   display: inline-block;
 }
 .a_txt {
-  padding-left: 20px;
-  width: 90%;
+  width: 100%;
   display: inline-block;
   
 
@@ -1043,6 +1038,7 @@ footer {
 }
 
 .pager .pagination li {
+  display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
@@ -1077,7 +1073,7 @@ footer {
 .pager .pagination li a:hover,
 .pager .pagination li a.active{
   color: #222222;
-  background-color: #FFF;
+  background: #FFF;
   border-radius: 10px;
 }
 
@@ -1404,8 +1400,7 @@ nav .btn a {
   .frow {
 
     .marker {
-      padding: 0 10px;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
     .frow_contents {
       flex-direction: column;
@@ -1500,6 +1495,13 @@ nav .btn a {
 
   .qa {
 
+    .a {
+      .a_mark {
+        position: absolute;
+        bottom: 35%;
+
+      }
+    }
 
     .a_txt {
       font-size: 1.4rem;
@@ -1509,13 +1511,7 @@ nav .btn a {
 
 }
 
-@media screen and (max-width: 592px) {
-
-  .frow {
-    .marker {
-      font-size: 1.2rem;
-    }
-  }
+@media screen and (max-width: 568px) {
 
   .prev-arrow {
     top: 100px;
@@ -1542,13 +1538,6 @@ nav .btn a {
       }
     }
 
-}
-
-#consept {
-
-  .marker {
-    font-size: 1.5rem;
-  }
 }
 
 

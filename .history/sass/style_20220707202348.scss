@@ -1404,7 +1404,7 @@ nav .btn a {
   .frow {
 
     .marker {
-      padding: 0 10px;
+      padding: 0 1;
       font-size: 1.8rem;
     }
     .frow_contents {
@@ -1509,13 +1509,7 @@ nav .btn a {
 
 }
 
-@media screen and (max-width: 592px) {
-
-  .frow {
-    .marker {
-      font-size: 1.2rem;
-    }
-  }
+@media screen and (max-width: 568px) {
 
   .prev-arrow {
     top: 100px;
@@ -1542,13 +1536,6 @@ nav .btn a {
       }
     }
 
-}
-
-#consept {
-
-  .marker {
-    font-size: 1.5rem;
-  }
 }
 
 

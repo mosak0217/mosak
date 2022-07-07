@@ -30,7 +30,7 @@ a {
 
 a:hover {
   color: inherit;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 li {
@@ -693,7 +693,7 @@ justify-content: space-between;
   padding: 10px;
   background: #FF7676;
   color: #FFFF;
-  border-radius: 240%;
+  border-radius: 50%;
   display: inline-block;
   vertical-align: top;
   width: 44px;
@@ -711,7 +711,6 @@ justify-content: space-between;
   display: inline-block;
 }
 .a_txt {
-  padding-left: 20px;
   width: 90%;
   display: inline-block;
   
@@ -1043,6 +1042,7 @@ footer {
 }
 
 .pager .pagination li {
+  display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
@@ -1404,8 +1404,7 @@ nav .btn a {
   .frow {
 
     .marker {
-      padding: 0 10px;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
     .frow_contents {
       flex-direction: column;
@@ -1509,13 +1508,7 @@ nav .btn a {
 
 }
 
-@media screen and (max-width: 592px) {
-
-  .frow {
-    .marker {
-      font-size: 1.2rem;
-    }
-  }
+@media screen and (max-width: 568px) {
 
   .prev-arrow {
     top: 100px;
@@ -1542,13 +1535,6 @@ nav .btn a {
       }
     }
 
-}
-
-#consept {
-
-  .marker {
-    font-size: 1.5rem;
-  }
 }
 
 

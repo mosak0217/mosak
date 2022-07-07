@@ -30,7 +30,7 @@ a {
 
 a:hover {
   color: inherit;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 li {
@@ -1036,79 +1036,41 @@ footer {
 
 
 
-.pager .pagination {
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.pager .pagination li {
-  margin: 0 2px;
-  padding: 0;
-  display: inline-block;
-  background: #101A70;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  position: relative;
-  border-radius: 10px;
-}
-
-
-.pager .pagination li a{
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display:table;
+.Pagination {
+  display: flex;
+  align-items: center;
+  }
+  .Pagination-Item-Link {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: #fff;
+  border: solid 2px #111;
+  font-size: 14px;
+  color: #111;
+  font-weight: bold;
+  transition: all 0.15s linear;
+  }
+  .Pagination-Item-Link-Icon {
+  width: 20px;
+  }
+  .Pagination-Item-Link.isActive {
+  background: #111;
   color: #fff;
-  text-decoration: none;
-}
-
-.pager .pagination li a span{
-  display:table-cell;
-  vertical-align:middle;
-  
-}
-
-.pager .pagination li a:hover,
-.pager .pagination li a.active{
-  color: #222222;
-  background-color: #FFF;
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 767px){
-  .pager .pagination li{
-    display: none;
+  pointer-events: none;
   }
-
-  .pager .pagination li.pre,
-  .pager .pagination li.next{
-    display: inline-block;
-    width: 40%;
-    height: 50px;
-    text-align: center;
+  .Pagination-Item-Link:not(.isActive):hover {
+  background: #111;
+  color: #fff;
   }
-
-  .pager .pagination li.pre a,
-  .pager .pagination li.next a{
-    width: 100%;
-    text-align: center;
+  .Pagination > * + * {
+  margin-left: 8px;
   }
-
-  .pager .pagination li.pre span::after{
-    content: "　前の5件へ";
-  }
-
-  .pager .pagination li.next span::before{
-    content: "次の5件へ　";
-  }
-
-}
 
 #single {
   
@@ -1404,8 +1366,7 @@ nav .btn a {
   .frow {
 
     .marker {
-      padding: 0 10px;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
     .frow_contents {
       flex-direction: column;
@@ -1509,13 +1470,7 @@ nav .btn a {
 
 }
 
-@media screen and (max-width: 592px) {
-
-  .frow {
-    .marker {
-      font-size: 1.2rem;
-    }
-  }
+@media screen and (max-width: 568px) {
 
   .prev-arrow {
     top: 100px;
@@ -1542,13 +1497,6 @@ nav .btn a {
       }
     }
 
-}
-
-#consept {
-
-  .marker {
-    font-size: 1.5rem;
-  }
 }
 
 

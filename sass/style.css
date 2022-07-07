@@ -20,11 +20,11 @@ img {
 
 a {
   text-decoration: none;
-  transition: all 0.5s ease;
 }
 
 a:hover {
-  opacity: 0.7;
+  color: inherit;
+  opacity: 0.8;
 }
 
 li {
@@ -526,27 +526,31 @@ li {
 }
 
 .a {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .a .a_mark {
-  position: absolute;
   padding: 10px;
   background: #FF7676;
   color: white;
-  border-radius: 50%;
+  border-radius: 240%;
   display: inline-block;
+  vertical-align: top;
+  width: 44px;
+  text-align: center;
 }
 
 .q_txt {
-  margin-left: 20px;
+  padding-left: 20px;
   padding-top: 10px;
   width: 60%;
+  display: inline-block;
 }
 
 .a_txt {
-  width: 100%;
+  padding-left: 20px;
+  width: 90%;
   display: inline-block;
-  padding-left: 50px;
 }
 
 .qa .q {
@@ -775,7 +779,6 @@ footer .copyright {
 }
 
 .pager .pagination li {
-  display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
@@ -808,7 +811,7 @@ footer .copyright {
 .pager .pagination li a:hover,
 .pager .pagination li a.active {
   color: #222222;
-  background: #FFF;
+  background-color: #FFF;
   border-radius: 10px;
 }
 
@@ -1088,7 +1091,8 @@ footer .copyright {
 }
 @media screen and (max-width: 1024px) {
   .frow .marker {
-    font-size: 2.4rem;
+    padding: 0 10px;
+    font-size: 1.8rem;
   }
   .frow .frow_contents {
     flex-direction: column;
@@ -1161,15 +1165,15 @@ footer .copyright {
     font-size: 1.2rem;
   }
 
-  .qa .a .a_mark {
-    position: absolute;
-    bottom: 35%;
-  }
   .qa .a_txt {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 592px) {
+  .frow .marker {
+    font-size: 1.2rem;
+  }
+
   .prev-arrow {
     top: 100px;
     left: -30px;
@@ -1189,5 +1193,9 @@ footer .copyright {
   }
   #single dl dd {
     font-size: 1.4rem;
+  }
+
+  #consept .marker {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
