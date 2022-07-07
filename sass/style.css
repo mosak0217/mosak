@@ -458,11 +458,11 @@ li {
 }
 
 .profile .wrapper .profile_imgs {
-  padding-right: 40px;
   text-align: center;
 }
 .profile .wrapper .profile_imgs .sns_imgs {
   padding-top: 24px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
