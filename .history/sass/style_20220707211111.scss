@@ -1125,10 +1125,11 @@ footer {
 
     dl {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
       margin: 100px 0 100px;
-     width: 100%;
+      padding-top: 90px;
+      padding-bottom: 90px;
+  width: 100%;
       
       
       dt {
@@ -1140,11 +1141,12 @@ footer {
   
       }
       dd {
-        width: 75%;
-        margin-bottom: 30px;
-       vertical-align: baseline;
+        width
     
   
+  
+  
+        
 
       }
       

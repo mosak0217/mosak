@@ -1115,6 +1115,9 @@ footer {
   
   
   .wrapper {
+    text-align: center;
+    
+    
 
     .single_img {
       display: flex;
@@ -1125,26 +1128,28 @@ footer {
 
     dl {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      margin: 100px 0 100px;
-     width: 100%;
+      margi
+      padding-top: 90px;
+      padding-bottom: 90px;
+  width: 100%;
       
       
       dt {
-        display: block;
-        float: left;
-        width: 25%;
         
-  
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
   
       }
       dd {
-        width: 75%;
-        margin-bottom: 30px;
-       vertical-align: baseline;
     
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
   
+  
+        
 
       }
       

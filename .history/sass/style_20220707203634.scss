@@ -604,7 +604,6 @@ li {
 }
 
 #profile {
-  
 
   .profile_scroll {
     overflow-x: scroll;
@@ -618,7 +617,7 @@ li {
     font-weight: bold;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
-    min-width: 600px;
+    min-width: 800px;
    
     
     
@@ -1115,6 +1114,9 @@ footer {
   
   
   .wrapper {
+    text-align: left;
+    
+    
 
     .single_img {
       display: flex;
@@ -1124,27 +1126,26 @@ footer {
     }
 
     dl {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 100px 0 100px;
-     width: 100%;
+      padding-top: 90px;
+      padding-bottom: 90px;
+  width: 100%;
       
       
       dt {
-        display: block;
-        float: left;
-        width: 25%;
         
-  
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  float: left;
+  width: 30%;
   
       }
       dd {
-        width: 75%;
-        margin-bottom: 30px;
-       vertical-align: baseline;
     
+  padding-bottom: 20px;
+  margin-bottom: 10px;
   
+  
+        
 
       }
       
@@ -1512,8 +1513,7 @@ nav .btn a {
 
   .frow {
     .marker {
-      padding: 0 20px;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -1547,7 +1547,7 @@ nav .btn a {
 #consept {
 
   .marker {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
