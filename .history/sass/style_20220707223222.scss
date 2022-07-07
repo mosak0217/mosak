@@ -721,7 +721,7 @@ justify-content: space-between;
 }
 .a_txt {
   padding-left: 20px;
-  width: 80%;
+  width: 90%;
   display: inline-block;
   
 
@@ -1559,13 +1559,23 @@ nav .btn a {
   }
 }
 
-.q_txt {
-  font-size: 1.4rem;
 
-
-}
 
 
 
 }
 
+@media screen and (max-width:5px){
+
+  .a_mark {
+    font-size: 1.2rem;
+
+  
+  
+
+
+
+  }
+
+
+}

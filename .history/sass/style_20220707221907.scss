@@ -333,7 +333,7 @@ li {
     font-weight: bold;
     border-radius: 20px;
     padding: 0 42px;
-    min-width: 780px;
+    min-width: 600px;
     
 
   }
@@ -596,15 +596,7 @@ li {
       .sns_imgs {
         padding-top: 24px;
         display: flex;
-        justify-content: center;
-
-        a {
-          padding-left: 24px;
-        }
-        a:first-child {
-          padding-left: 0;
-        }
-        
+        justify-content: space-around;
      
       }
     }
@@ -626,7 +618,7 @@ li {
     font-weight: bold;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
-    min-width: 756px;
+    min-width: 600px;
    
     
     
@@ -721,7 +713,7 @@ justify-content: space-between;
 }
 .a_txt {
   padding-left: 20px;
-  width: 80%;
+  width: 90%;
   display: inline-block;
   
 
@@ -1559,13 +1551,14 @@ nav .btn a {
   }
 }
 
-.q_txt {
-  font-size: 1.4rem;
-
-
-}
+.a_mark {
+  
+  
 
 
 
 }
 
+
+
+}

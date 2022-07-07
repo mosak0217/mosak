@@ -271,7 +271,7 @@ li {
   font-weight: bold;
   border-radius: 20px;
   padding: 0 42px;
-  min-width: 600px;
+  min-width: 780px;
 }
 .price th {
   text-align: center;
@@ -457,10 +457,6 @@ li {
   margin-top: 0;
 }
 
-.profile .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 .profile .wrapper .profile_imgs {
   padding-right: 40px;
   text-align: center;
@@ -468,7 +464,13 @@ li {
 .profile .wrapper .profile_imgs .sns_imgs {
   padding-top: 24px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.profile .wrapper .profile_imgs .sns_imgs a {
+  padding-left: 24px;
+}
+.profile .wrapper .profile_imgs .sns_imgs a:first-child {
+  padding-left: 0;
 }
 
 #profile .profile_scroll {
@@ -481,7 +483,7 @@ li {
   font-weight: bold;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  min-width: 600px;
+  min-width: 756px;
 }
 #profile table tr {
   text-align: center;
@@ -550,7 +552,7 @@ li {
 
 .a_txt {
   padding-left: 20px;
-  width: 90%;
+  width: 80%;
   display: inline-block;
 }
 
@@ -1198,5 +1200,9 @@ footer .copyright {
 
   #consept .marker {
     font-size: 2rem;
+  }
+
+  .q_txt {
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
