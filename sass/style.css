@@ -262,6 +262,7 @@ li {
 
 .price .table_scroll {
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .price table {
   width: 100%;
@@ -475,6 +476,7 @@ li {
 
 #profile .profile_scroll {
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 #profile table {
   table-layout: fixed;
