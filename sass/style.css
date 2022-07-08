@@ -608,10 +608,15 @@ li {
 .contact .section_sub_ttl {
   color: white;
 }
-.contact h2 {
+.contact .contact_txt {
+  width: 100%;
+}
+.contact .contact_txt h2 {
   text-align: center;
+  width: 80%;
   padding-top: 35px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 
 .contact .wrapper form label {
@@ -663,7 +668,7 @@ li {
 
 .my-parts {
   text-align: left;
-  width: 50%;
+  width: 60%;
 }
 
 .my-parts input[type=radio] {

@@ -797,10 +797,20 @@ justify-content: space-between;
   }
   background: #101A70;
   color: #FFFF;
-  h2 {
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 60px;
+
+  .contact_txt {
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      width: 80%;
+      padding-top: 35px;
+      padding-bottom: 60px;
+      margin: 0 auto;
+  
+      
+      
+    }
   }
 }
 
@@ -881,7 +891,7 @@ justify-content: space-between;
 
 .my-parts {
 	text-align: left;
-  width: 50%;
+  width: 60%;
 }
 .my-parts input[type="radio"] {
 	display: none;
