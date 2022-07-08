@@ -109,8 +109,8 @@ li {
 .marker {
   font-size: 2.6rem;
   font-weight: bold;
-  background: linear-gradient(transparent 60%, #FDFF98 20%);
-  display: inline-block;
+  background: linear-gradient(transparent 60%, #FDFF98 0%) repeat-x;
+  display: inline;
 }
 .marker span {
   color: #E51B1B;
@@ -196,6 +196,7 @@ li {
   font-size: 3.2rem;
   color: #222222;
   font-weight: bold;
+  word-wrap: break-word;
 }
 .mv .mv_inner .portforio_ttl {
   font-weight: bold;
@@ -267,7 +268,7 @@ li {
 .price table {
   width: 100%;
   text-align: center;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 4px inset;
   table-layout: fixed;
   font-weight: bold;
   border-radius: 20px;
@@ -328,8 +329,9 @@ li {
 .frow {
   text-align: center;
 }
-.frow .marker {
-  margin-bottom: 45px;
+.frow .frow_marker {
+  margin-bottom: 40px;
+  padding: 0 20px;
 }
 .frow .frow_contents {
   display: flex;
@@ -396,8 +398,8 @@ li {
   justify-content: space-between;
 }
 .info .wrapper .info_cont {
-  width: 380px;
   text-align: center;
+  width: calc(50% - 100px);
 }
 .info .wrapper .info_cont img {
   display: block;
@@ -443,11 +445,11 @@ li {
   font-size: 5rem;
   transform: translateY(-30%) translateX(1em);
 }
+.consept_cont .consept_txt_area .consept_marker {
+  margin: 50px 32px;
+}
 .consept_cont .consept_txt_area .marker {
-  margin-bottom: 32px;
-  margin-left: 32px;
-  margin-top: 50px;
-  margin-right: 50px;
+  font-size: 3.2rem;
 }
 .consept_cont .consept_txt_area p {
   padding: 0 32px;
@@ -483,7 +485,7 @@ li {
   text-align: center;
   width: 100%;
   font-weight: bold;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 3px inset;
   border-radius: 20px;
   min-width: 756px;
 }
@@ -870,7 +872,7 @@ footer .copyright {
   vertical-align: baseline;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1105px) {
   .wrapper {
     width: 100%;
     max-width: 1160px;
@@ -1096,11 +1098,12 @@ footer .copyright {
 @media screen and (max-width: 1024px) {
   .frow .marker {
     padding: 0 10px;
-    font-size: 1.8rem;
+    font-size: 2.6rem;
   }
   .frow .frow_contents {
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
   }
   .frow .frow_contents .box_cont {
     width: 100%;
@@ -1130,6 +1133,7 @@ footer .copyright {
   }
   .info .wrapper .info_cont {
     margin-top: 60px;
+    width: 80%;
   }
   .info .wrapper .info_cont:first-child {
     margin-top: 0;
@@ -1146,7 +1150,7 @@ footer .copyright {
     flex-direction: column;
   }
   .consept .consept_cont .marker {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
   .consept .consept_cont .consept_txt_area {
     margin-top: 40px;
@@ -1162,9 +1166,6 @@ footer .copyright {
   .profile .wrapper .profile_imgs {
     padding: 0;
   }
-  .profile .wrapper table {
-    margin-top: 50px;
-  }
   .profile .wrapper table td {
     font-size: 1.2rem;
   }
@@ -1175,18 +1176,17 @@ footer .copyright {
 }
 @media screen and (max-width: 592px) {
   .frow .marker {
-    padding: 0 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .prev-arrow {
     top: 100px;
-    left: -30px;
+    left: -15px;
   }
 
   .next-arrow {
     top: 100px;
-    right: -30px;
+    right: -15px;
   }
 
   #single dl {
@@ -1201,7 +1201,7 @@ footer .copyright {
   }
 
   #consept .marker {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 
   .q_txt {

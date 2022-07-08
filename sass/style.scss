@@ -126,8 +126,8 @@ li {
 .marker {
   font-size: 2.6rem;
   font-weight: bold;
-  background: linear-gradient(transparent 60%, #FDFF98 20%);
-   display: inline-block;
+  background: linear-gradient(transparent 60%, #FDFF98 0%) repeat-x;
+   display: inline;
   span {
     color: #E51B1B;
   }
@@ -226,6 +226,7 @@ li {
         font-size: 3.2rem;
         color: #222222;
         font-weight: bold;
+        word-wrap: break-word;
       
       }
     }
@@ -329,7 +330,7 @@ li {
   table {
     width: 100%;
     text-align: center;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 4px inset;
     table-layout: fixed;
     font-weight: bold;
     border-radius: 20px;
@@ -411,6 +412,7 @@ li {
     border-radius: 10px;
     margin-right: 34px;
   }
+  
 }
 }
 
@@ -421,8 +423,9 @@ li {
 .frow {
   text-align: center;
 
-  .marker {
-    margin-bottom: 45px;
+  .frow_marker{
+    margin-bottom: 40px;
+    padding: 0 20px;
   }
 
 .frow_contents{
@@ -504,8 +507,8 @@ li {
     justify-content: space-between;
 
     .info_cont {
-      width: 380px;
       text-align: center;
+      width: calc(100% / 2 - 100px);
 
       img {
         display: block;
@@ -565,11 +568,14 @@ li {
       font-size: 5rem;
       transform: translateY(-30%) translateX(1em);
     }
+
+    .consept_marker {
+      margin: 50px  32px;
+
+    }
     .marker {
-      margin-bottom: 32px;
-      margin-left: 32px;
-      margin-top: 50px;
-      margin-right: 50px;
+      font-size: 3.2rem;
+      
     }
     p {
       padding: 0 32px;
@@ -626,7 +632,7 @@ li {
     // border: 1px solid #222222;
     width: 100%;
     font-weight: bold;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 3px inset;
     border-radius: 20px;
     min-width: 756px;
    
@@ -1119,6 +1125,7 @@ footer {
     content: "次の5件へ　";
   }
 
+
 }
 
 #single {
@@ -1170,7 +1177,7 @@ footer {
 
 
 // タブレット
-@media screen and (max-width:1024px){
+@media screen and (max-width:1105px){
 
   .wrapper {
     width: 100%;
@@ -1414,11 +1421,12 @@ nav .btn a {
 
     .marker {
       padding: 0 10px;
-      font-size: 1.8rem;
+      font-size: 2.6rem;
     }
     .frow_contents {
       flex-direction: column;
       align-items: center;
+      padding: 0 20px;
 
       .box_cont {
         width: 100%;
@@ -1455,6 +1463,7 @@ nav .btn a {
 
       .info_cont {
         margin-top: 60px;
+        width: 80%;
       }
       .info_cont:first-child {
         margin-top: 0;
@@ -1476,7 +1485,7 @@ nav .btn a {
       flex-direction: column;
 
       .marker {
-        font-size: 2.4rem;
+        font-size: 3.2rem;
       }
 
       .consept_txt_area {
@@ -1498,7 +1507,6 @@ nav .btn a {
         padding: 0;
       }
       table {
-        margin-top: 50px;
 
         td {
           font-size: 1.2rem;
@@ -1522,19 +1530,18 @@ nav .btn a {
 
   .frow {
     .marker {
-      padding: 0 20px;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 
   .prev-arrow {
     top: 100px;
-    left: -30px;
+    left: -15px;
     
   }
   .next-arrow {
     top: 100px;
-    right: -30px;
+    right: -15px;
     
   }
 
@@ -1557,7 +1564,7 @@ nav .btn a {
 #consept {
 
   .marker {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 }
 
