@@ -279,7 +279,7 @@ li {
   text-align: center;
   padding: 14px;
   color: white;
-  border-right: 2px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
 }
 .price th:nth-child(1) {
   border-radius: 20px 0 0 0;
@@ -298,7 +298,7 @@ li {
 .price tr td {
   padding: 14px;
   vertical-align: middle;
-  border-right: 2px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
 }
 .price tr td:nth-child(even) {
   border-right: none;
