@@ -217,8 +217,8 @@ li {
 
 .skill .box_contents {
   display: flex;
-  justify-content: space-between;
-  gap: 36px;
+  justify-content: center;
+  gap: 32px;
 }
 
 .portforio {
@@ -343,7 +343,7 @@ li {
 .frow .frow_contents .box_cont {
   width: calc(25% - 60px);
   text-align: center;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 .frow .frow_contents .box_cont h2 {
   padding: 7px 26px;
@@ -357,8 +357,8 @@ li {
 .frow .frow_contents .box_cont img {
   display: block;
   margin: 0 auto;
-  padding-top: 14px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .frow .frow_contents .box_cont h3 {
   font-size: 1.8rem;
@@ -423,7 +423,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 80px 0;
+  margin: 40px 0;
 }
 .consept_cont img {
   padding-right: 60px;
